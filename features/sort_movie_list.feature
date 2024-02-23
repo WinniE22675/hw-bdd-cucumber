@@ -25,9 +25,11 @@ Background: movies have been added to database
 Scenario: sort movies alphabetically
   When I follow "Movie Title"
   # your steps here
-  Then complete the rest of of this scenario
+  Then I should see "Chicken Run" before "Chocolat"
+  # Then complete the rest of of this scenario
 
 Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
   # your steps here
-  Then complete the rest of of this scenario
+  Then I should see "Chocolat" before "Amelie"
+  # Then complete the rest of of this scenario
